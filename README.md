@@ -1,1 +1,1 @@
-# main-repo main repository for files
+# main repository for files
