@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <nav>
+        <a href="/index">The Armory</a>
+        <a href="/cart">Shopping Cart ({{}})</a>
+    </nav>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in cart %}
+            <tr>
+                <th scope="row">{{product.name}}</th>
+                <td>{{product.price}}</td>
+                <td>{{quantity}}</td>
+                <td>{% product.price*quantity%}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <p>Total: $ {{cart_total}}</p>
+    <a href="/index"><button>Continue Shopping!</button></a>
+    <div>
+        <h3>Shipping Information</h3>
+        <form action="/"></form>
+    </div>
+
+</body>
+</html>

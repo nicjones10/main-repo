@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <nav>
+        <a href="/index">Teriyaki Plus</a>
+        <a href="/cart">Order ({{}})</a>
+    </nav>
+    <div>
+        <div>
+            <h6>Categories</h6>
+            <ul>
+                <li><a href="/main_dishes">Main Dishes</a></li>
+                <li><a href="/specials">House Specials</a></li>
+                <li><a href="/sides">Side Orders</a></li>
+                <li><a href="/beverages">Beverages</a></li>
+            </ul>
+        </div>
+        <div> 
+            <h4>{{context.title}}</h4>
+            {% for item in products %}
+            <div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
